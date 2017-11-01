@@ -4,7 +4,7 @@ import Radium from "radium"
 import { connect } from "react-redux"
 
 import * as counterActions from "../actions/counterActions"
-import Headline from "../components/Headline"
+import Headline from "../components/headline"
 
 const styles = {
   button: {

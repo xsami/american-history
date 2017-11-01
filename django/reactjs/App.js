@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import { render } from "react-dom"
 import {
   createStore,
@@ -19,7 +19,7 @@ let finalCreateStore = compose(
 let reducer = combineReducers(reducers)
 let store = finalCreateStore(reducer)
 
-class SampleApp extends React.Component {
+class App extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -29,4 +29,4 @@ class SampleApp extends React.Component {
   }
 }
 
-render(<SampleApp/>, document.getElementById('SampleApp'))
+render(<App/>, document.getElementById('App'))
