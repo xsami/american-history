@@ -12,7 +12,8 @@ config.plugins = config.plugins.concat([
   new webpack.DefinePlugin({
     'process.env': {
       'NODE_ENV': JSON.stringify('production'),
-      'BASE_API_URL': JSON.stringify('https://example.com/api/v1/'),
+      'BASE_API_URL': JSON.stringify('https://example.com/api/'),
+        'STATIC_URL': JSON.stringify('https://example.com/static/'),
   }}),
 
   // keeps hashes consistent between compilations
