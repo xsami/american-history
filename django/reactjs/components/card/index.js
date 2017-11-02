@@ -7,11 +7,13 @@ const Card = ({
     config = {},
 }) => {
    return (
-        <div style={styles.card}>
-            <h3 style={styles.title}>{name}</h3>
-            <div style={styles.img}>
-                <img src={img} style={styles.imgSize}/>
+       <div style={styles.card} className="card">
+            <img src={img} alt="Avatar" style={styles.img} />
+            <div style={styles.container}>
+                <h4><b>{name}</b></h4> 
+                <p>Interior Designer</p> 
             </div>
+            <br />
         </div>
    );
 }
