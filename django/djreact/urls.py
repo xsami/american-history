@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.views import generic
+from .views import characters as c
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',
         generic.TemplateView.as_view(template_name='votes_main.html')),
+    url(r'^sample/', c.index()),
 ]
