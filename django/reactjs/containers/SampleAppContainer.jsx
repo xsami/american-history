@@ -1,44 +1,38 @@
-import React from "react"
-import Radium from "radium"
+import React, { Component } from "react";
+import Radium from "radium";
 
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 
-import * as counterActions from "../actions/counterActions"
-import Headline from "../components/headline"
-
-const styles = {
-  button: {
-    cursor: "pointer",
-  },
-  counter: {
-    color: "blue",
-    fontSize: "20px",
-  }
-}
+import * as counterActions from "../actions/counterActions";
+import Headline from "../components/headline";
+import Card from "../components/card";
 
 @connect(state => ({
-  counters: state.counters,
+  counters: state.counters
 }))
 @Radium
-export default class SampleAppContainer extends React.Component {
+export default class SampleAppContainer extends Component {
   handleClick() {
-    let {dispatch} = this.props;
-    dispatch(counterActions.increaseCounter())
+    let { dispatch } = this.props;
+    dispatch(counterActions.increaseCounter());
   }
 
   render() {
-    let {counters} = this.props
+    let { counters } = this.props;
     return (
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
             <Headline>Sample App!</Headline>
-            <div style={[styles.button]} onClick={() => this.handleClick()}>INCREASE</div>
+            <Card name={'Joaquin Balaguer'} img={'http://backtofront.london/wp-content/uploads/2016/03/01_vv_logo.png'}/>
+            {/* <div style={[styles.button]} onClick={() => this.handleClick()}>
+              INCREASE
+            </div>
             <p style={[styles.counter]}>{counters.clicks}</p>
-            <p>{process.env.BASE_API_URL}</p>
+            <p>{process.env.BASE_API_URL}</p> */}
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

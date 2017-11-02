@@ -10,7 +10,7 @@ const Card = ({
         <div style={styles.card}>
             <h3 style={styles.title}>{name}</h3>
             <div style={styles.img}>
-                <img src={img} />
+                <img src={img} style={styles.imgSize}/>
             </div>
         </div>
    );
