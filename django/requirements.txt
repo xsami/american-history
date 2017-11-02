@@ -2,3 +2,4 @@ Django==1.9.3
 Fabric==1.10.2
 django-webpack-loader==0.2.4
 Pillow==4.3.0
+django-cors-headers==2.1.0

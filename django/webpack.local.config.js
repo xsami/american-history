@@ -31,7 +31,8 @@ config.plugins = config.plugins.concat([
   new webpack.DefinePlugin({
     'process.env': {
       'NODE_ENV': JSON.stringify('development'),
-      'BASE_API_URL': JSON.stringify('http://' + ip + ':8000/api/v1/'),
+      'BASE_API_URL': JSON.stringify('http://' + ip + ':8000/api/'),
+        'STATIC_URL': JSON.stringify('http://' + ip + ':8000/static/'),
   }}),
 
 ])
