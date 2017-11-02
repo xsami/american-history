@@ -1,1 +1,1 @@
-export { default as counters } from './counters'
+export { default as characters } from "./characters";
