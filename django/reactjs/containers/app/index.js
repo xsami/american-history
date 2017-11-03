@@ -6,11 +6,8 @@ import { connect } from "react-redux";
 import Headline from "../../components/headline";
 import Board from "../../components/board";
 
-@connect(state => ({
-  counters: state.counters
-}))
-@Radium
-export default class AppContainer extends Component {
+
+class AppContainer extends Component {
   render() {
     return (
       <div className="container">
@@ -24,3 +21,9 @@ export default class AppContainer extends Component {
     );
   }
 }
+
+const mapStateToProp = state => ({
+  state
+});
+
+export default connect(mapStateToProp)(AppContainer)
