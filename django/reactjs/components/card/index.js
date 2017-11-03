@@ -7,13 +7,12 @@ const Card = ({
     config = {},
 }) => {
    return (
-       <div style={styles.card} className="card">
+       <div style={styles.card} className="card col-sm-4">
             <img src={img} alt="Avatar" style={styles.img} />
             <div style={styles.container}>
                 <h4><b>{name}</b></h4> 
-                <p>Interior Designer</p> 
+                <p>Presidente</p> 
             </div>
-            <br />
         </div>
    );
 }
