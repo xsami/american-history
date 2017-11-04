@@ -6,8 +6,8 @@ import { connect } from "react-redux";
 import Headline from "../../components/headline";
 import Board from "../../components/board";
 
-
 class AppContainer extends Component {
+
   render() {
     return (
       <div className="container">
@@ -22,8 +22,10 @@ class AppContainer extends Component {
   }
 }
 
+
 const mapStateToProp = state => ({
   state
 });
 
 export default connect(mapStateToProp)(AppContainer)
+
