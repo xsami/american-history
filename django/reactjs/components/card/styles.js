@@ -2,18 +2,22 @@ import React from 'react';
 
 export default {
   card: {
-    backgroundColor: "#ffffff",
-    border: "1px solid red",
-    width: 200
-  },
-  title: {
-    backgroundColor: "#feab00",
+    boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+    transition: "0.3s",
+    // width: "40%",
+    borderRadius: 5,
+    margin: "10px 10px 10px 10px",
+    height: 300,
   },
   img: {
-    backgroundColor: "#ffa",
+      borderRadius: "5px 5px 0 0",
+      width: "100%",
+      border: "14px solid #000000",
+      height: 225,
   },
-  imgSize: {
-    height: 50,
-    width: 50,
+  container: {
+    padding: "2px 16px",
+    textAlign: "center",
+
   }
 };

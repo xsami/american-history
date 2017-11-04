@@ -1,4 +1,6 @@
-export const initialState = {
+
+const initialState = {
+
     characters: [
         {
             name: "Junior Rivera",
@@ -11,4 +13,6 @@ export const initialState = {
             api: "https://api.github.com/mvd",
         }
     ]
-}
+};
+
+export default initialState;
