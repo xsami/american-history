@@ -13,7 +13,7 @@ class AppContainer extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            <Headline>Historia Americana</Headline>
+            <Headline>Title Goes Here</Headline>
           </div>
         </div>
         <Board />
@@ -27,5 +27,5 @@ const mapStateToProp = state => ({
   state
 });
 
-export default connect(mapStateToProp)(AppContainer)
 
+export default connect(mapStateToProp)(AppContainer);
