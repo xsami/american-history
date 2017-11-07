@@ -27,9 +27,5 @@ const mapStateToProp = state => ({
   state
 });
 
-<<<<<<< HEAD
-export default connect(mapStateToProp)(AppContainer);
-=======
-export default connect(mapStateToProp)(AppContainer)
 
->>>>>>> 4f8b40e58431f4d1dcbd898589b9f07b53e51b7a
+export default connect(mapStateToProp)(AppContainer);
