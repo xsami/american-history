@@ -8,9 +8,8 @@ You can clone this repository, install all dependencies and try it in your
 browser quite easily:
 
 ```bash
-git clone https://github.com/mbrochh/django-reactjs-boilerplate.git
-cd django-reactjs-boilerplate/django
-mkvirtualenv djreact
+https://github.com/xsami/american-history.git
+cd american-history/django
 pip install -r requirements.txt
 npm install
 ./manage.py migrate
