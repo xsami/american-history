@@ -42,13 +42,17 @@ class Board extends Component {
         <div className="row">
           {characters.map((element, key) => {
             return <Card key={element.pk} name={element.fields.name} img={element.fields.profile_image} />;
-                /* img={this.getCharacterUrl(element.fields.profile_image)} */
+            /* img={this.getCharacterUrl(element.fields.profile_image)} */
           })}
         </div>
-          <button className="btn btn-default" onClick={() => this.props.swal("Good job!", "You clicked the button!", "success")}>
-            Iniciar
-          </button>
-          <ReduxSweetAlert />
+        <button className="btn btn-default" onClick={() => this.props.swal({
+            title: 'Who said?',
+            text: 'Tengo un maldito flow que parezco un traficante ?',
+            allowOutsideClick: true
+        })}>
+          Iniciar
+        </button>
+        <ReduxSweetAlert />
       </div>;
   }
 }
