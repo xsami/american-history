@@ -18,5 +18,6 @@ export default {
   container: {
     padding: "2px 16px",
     textAlign: "center",
+
   }
 };

@@ -1,4 +1,6 @@
+
 const initialState = {
+
     characters: [
         {
             name: "Junior Rivera",

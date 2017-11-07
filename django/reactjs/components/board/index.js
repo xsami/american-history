@@ -7,6 +7,7 @@ import Card from "../../components/card";
 
 import styles from "./styles";
 
+
 const characters = [
   {
     model: "history.character",
