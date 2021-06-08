@@ -1,5 +1,5 @@
 Django==1.11.28
 Fabric==1.10.2
 django-webpack-loader==0.2.4
-Pillow==7.1.0
+Pillow==8.2.0
 django-cors-headers==2.1.0
